@@ -1,0 +1,96 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family:sans-serif;
+}
+li {
+    list-style: none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.Logo {
+    flex: 1;
+}
+#logo {
+    height: 150px;
+    width: 150px;
+}
+.footer-txt {
+    font-size: 45px;
+}
+.footer-box {
+    padding: 10px 0 50px 0;
+}
+.card-box {
+    box-shadow: 2px 2px 9px 0px #dadada;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    margin-bottom:15px;
+ }
+.card-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 2;
+}
+.agent-intro{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+.input-boxes{
+    display:flex;
+}
+.loco-search{
+    padding:17px;
+     height:30px;
+     width:30%;
+}
+.bnt-go{
+    border:solid #30b60f 2px;
+    border-radius: 5px;
+    padding:6px;
+    background-color: #23aa4b;
+    color:#f3f3f3;
+}
+.jumbotron{
+    height:85vh;
+    background-image:url('../Images/agent-Hero\ \(1\).jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:#f2f2f2;
+}
+.address-txt{
+    padding: 0 20px 0 20px;
+    color:#796c6c;
+}
+.agent-img{
+    border:solid 4px #30b60f;
+    border-radius: 50%;
+    height:110px;
+    width:110px;
+    margin-top:10px; 
+}
+.find-search{
+    width:100%;
+    margin-bottom:20px;
+    padding:5px;
+}
+.pagination-bar{
+    margin:50px;
+}
+.contact-icon-box{
+    padding-bottom:15px;
+}
+@media screen and (max-width:576px){
+    .loco-search{
+        width:60vw;
+    }
+    .card-box:hover {
+        transform: scale(1.0);
+  
+    }
+}

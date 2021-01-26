@@ -1,0 +1,114 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+.text-box{
+     text-align:center;
+     position: relative;
+     color:#f2f2f2;
+     text-align:center;
+     top:45%;
+     transform:translateY(-50%);
+}
+.jumbotron{
+   height:85vh;
+   background-image:url('../Images/about-hero.jpg');
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   color:#f2f2f2;
+}
+.about-intro{
+    padding:30px;
+}
+.leader-intro-text{
+    padding:50px 10px 20px 10px;
+}
+.icon-box img{
+    width:150px;
+    height:150px;
+}
+.leader-img-box{
+    text-align:center;
+
+    
+}
+.leader-img-box img{
+    padding-bottom:10px;
+    height: 250px;
+    width:250px;
+}
+.row2{
+    padding-top:30px;
+}
+.bnt-box{
+    text-align:center;
+}
+section{
+    background-color:#f8f4f4;
+}
+.section-text{
+     position: relative;
+     top:45%;
+     transform:translateY(-50%);
+}
+.meet{
+    margin:30px;
+}
+.leader-intro{
+    padding:50px 10px 20px 10px;
+}
+.section-img-box img{
+    width: 100%;
+    height: 100%;
+    padding-bottom:20px;
+}
+.section-row-1{
+    padding: 50px 30px 50px 30px;
+    margin:30px 0 50px 0;
+}
+li{
+    list-style:none;
+}
+#logo {
+    height: 150px;
+    width: 150px;
+}
+footer{
+    margin-top:30px;
+}
+.footer-txt {
+    font-size: 45px;
+}
+
+.footer-box {
+    padding: 10px 0 50px 0;
+}
+@media screen and (max-width:1024px) {
+    .leader-img-box img {
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:992px) {
+   .leader-img-box img {
+       height: 130px;
+       width: 130px;
+   }
+}
+@media screen and (max-width:768px){
+    .leader-img-box img {
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and (max-width:576px){
+    .section-text{
+        text-align:center;
+    }
+    .leader-img-box img {
+        height: 250px;
+        width: 250px;
+    }
+}

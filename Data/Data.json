@@ -1,0 +1,145 @@
+[
+    {   "id":1,
+        "image":"../Images/listing-1",
+        "price":350000,
+        "address":"832 Roper St Houston,Texas 77034",
+        "description":"",
+        "details":{
+            "bedrooms":4,
+            "bathrooms":2,
+            "squareFt":2100
+        }
+    },
+    {
+        "id": 2,
+        "image":"../Images/listing-2",
+        "price":375000,
+        "address": "8817 Sand Pine Dr, Navarre, Florida, 32566",
+        "description":"",
+        "details": {
+            "bedrooms": 6,
+            "bathrooms": 3,
+            "squareFt":2900
+        }
+    },
+    {
+        "id": 3,
+        "image":"../Images/listing-3",
+        "price":400000,
+        "address": "1835 Dr Pamplico, South Carolina, 29583",
+        "description":"",
+        "details": {
+            "bedrooms": 7,
+            "bathrooms": 4,
+            "squareFt":3200
+        }
+    },
+    {
+        "id": 4,
+        "image":"../Images/listing-4",
+        "price":650000,
+        "address": "1841 E Hammett Rd, Hart, Missouri, 49420",
+        "description":"",
+        "details": {
+            "bedrooms": 8,
+            "bathrooms": 5,
+            "squareFt":3000
+        }
+    },
+    {
+        "id": 5,
+        "image":"../Images/listing-5",
+        "price":190000,
+        "address": "1606 Somerset Way, Van Buren, Arizona, 72956",
+        "description":"",
+        "details": {
+            "bedrooms": 5,
+            "bathrooms": 2,
+            "squareFt":2800
+        }
+    },
+    {
+        "id": 6,
+        "image":"../Images/listing-6",
+        "price":230000,
+        "address": "410 Woodward Rd, Trussville, Alaska, 35173",
+        "description":"",
+        "details": {
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "squareFt":2400
+        }
+    },
+    {
+        "id": 7,
+        "image":"../Images/listing-7",
+        "price":750000,
+        "address": "9136 County Rd #C, Bryan, Ohio, 43506",
+        "description":"",
+        "details": {
+            "bedrooms": 10,
+            "bathrooms": 7,
+            "squareFt":4850
+        }
+    },
+    {
+        "id": 8,
+        "image":"../Images/listing-8",
+        "price":150000,
+        "address": "103 Nottoway,Yorktown, Virgina, 23693",
+        "description":"",
+        "details": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "squareFt":2700
+        }
+    },
+    {
+        "id": 9,
+        "image":"../Images/listing-9",
+        "price":330000,
+        "address": "Bridge Sacramento ,California, 95691",
+        "description":"",
+        "details": {
+            "bedrooms": 5,
+            "bathrooms": 3,
+            "squareFt":3300
+        }
+    },
+    {
+        "id": 10,
+        "image":"../Images/listing-10",
+        "price":575000,
+        "address": "126 Holland St N, North, South Carolina, 29112",
+        "description":"",
+        "details": {
+            "bedrooms": 7,
+            "bathrooms": 3,
+            "squareFt":3120
+        }
+    },
+    {
+        "id": 11,
+        "image":"../Images/listing-11",
+        "price":289000,
+        "address": "200 Hughes Dr, Poteau, Oklahoma, 74953",
+        "description":"",
+        "details": {
+            "bedrooms": 5,
+            "bathrooms": 2,
+            "squareFt":2600
+        }
+    },
+    {
+        "id": 12,
+        "image":"../Images/listing-12",
+        "price":180000,
+        "address":"832 Roper St Houston,Texas 77034",
+        "description":"",
+        "details": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "squareFt":2200
+         }
+    }
+]

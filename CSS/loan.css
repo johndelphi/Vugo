@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+.jumbotron{
+    height:50vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:#f2f2f2;
+    background-image:url('../Images/loan-hero.jpg');
+}
+.hero-txt{
+        text-align: center;
+         position: relative;
+         top:45%;
+         transform:translateY(-50%);
+}
+.card-box{
+    padding:30px;
+    margin:10px 0px 20px;
+    box-shadow: 2px 2px 9px 0px #f0f0f0;
+}
+.card-link{
+     border: #b3b3b3 solid 1px;
+     border-radius: 3px;
+     padding:10px;
+}
+.card-link:hover{
+    text-decoration:none;
+     border: #0e57dd solid 1px;
+     transition: 1s;
+}
+li{
+    list-style:none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+#calc-img{
+    margin-bottom:15px;
+}
+.Logo {
+    flex: 1;
+}
+
+#logo {
+    height: 150px;
+    width: 150px;
+}
+
+.footer-txt {
+    font-size: 45px;
+}
+
+.footer-box {
+    padding: 10px 0 50px 0;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+footer {
+    margin-top: 25px;
+}
+@media screen and (max-width:576px){
+    .jumbotron{
+        height:65vh;
+    }
+}

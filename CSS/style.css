@@ -1,0 +1,84 @@
+*{
+  font-family: 'Istok Web', sans-serif;
+}
+img{
+    height:50%;
+    width:100%;
+}
+
+.text-box{
+    text-align:center;
+    position: relative;
+    color:white;
+    text-align:center;
+    top:45%;
+    transform:translateY(-50%);
+}
+#search-box{
+    width:50%;
+    padding:5px;
+}
+.jumbotron{
+    height: 70vh;
+  background-image: url('../images/NY-Hero.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:100% 100%;
+}
+.header{
+    padding:50px 0 50px 0;
+    font-size:2em;
+}
+.banner{
+    background-color:#35b631;
+    padding:15px;
+    color:white;
+    margin:0px;
+
+}
+li{
+    list-style:none;
+}
+.Logo{
+    flex:1;
+}
+.links-left{
+    flex:1;
+}
+nav{
+    align-items:center;
+}
+.nav-links{
+    display:flex;
+}
+li{
+    list-style:none;
+    
+}
+#search-link{
+    background-color:#5dc55a;
+}
+#searchbar{
+    height:50px;
+}
+#logo {
+    height: 150px;
+    width: 150px;
+}
+
+.footer-txt {
+    font-size: 45px;
+}
+
+.footer-box {
+    padding: 10px 0 50px 0;
+}
+ul{
+    margin:0px;
+    padding:0px;
+}
+@media screen and (max-width:576px){
+    .jumbotron{
+        height:50vh;
+    }
+}
