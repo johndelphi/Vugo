@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet"href = "./CSS/agents.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Vugo | Find an Agent</title>
+</head>
+<body ng-controller="main-controller">
+<nav-bar></nav-bar>
+  <div class ="jumbotron">
+      <div class = "agent-intro">
+      <h2>Find Your Real Estate Agent</h2>
+      <h6>Over 10,000 Agents to Choose From</h6>
+      <input type = 'text' placeholder="Enter a city of neighborhood..."class = "loco-search"><span>
+         <button class = "bnt-go">Go</button>
+      </span>
+  </div>
+</div>
+<div class = "container">
+    <h2 style = "padding:30px 0 10px 0">Find an Agent</h2>
+    <div class = "row">
+        <div class = "col-md-3">
+     <h6>Location</h6>
+     <input type='text' placeholder="Neighborhood/City/State/Zip" class="find-search"ng-model="search.address">
+    </div>
+    <div class="col-md-3">
+     <h6>Name</h6>
+
+    <input type='text' placeholder="Enter agent name" class="find-search"
+        ng-model="search.name">
+    </div>
+</div>
+    </div>
+    <div class = "container">
+    <div class = "row">
+   <div class="col-lg-3 col-md-4 col-sm-6"ng-repeat = "agent in agents | filter:search:strict">
+       <div class = "card-box text-center">
+           <img ng-src="{{agent.photo}}" class="agent-img"
+            alt = "Agent-image">
+       <h5 style = "margin:0px">{{agent.name}}</h5>
+       <h6><small>Real Estate Agent</small></h6>
+       <p class = 'address-txt'><small>{{agent.address}}</small></p>
+       <div class = 'contact-icon-box'>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6Gn38jQ1Dhc-myW-8LYjkC_CXRhlriXy63r8zC_kbFdnDA7f"
+           title="Send a Email"height="25px" width="25px">
+         <img src=
+             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jcka2tjP4IwetLozn3a_s_Sp4pgak6f0Th2qx0tuIaHAQO3y"height="22px"
+             width="22px"title = "Make a Call">
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<pagination-bar></pagination-bar>
+<footer-nav></footer-nav>
+  <script src="./JS/Module.js"></script>
+  <script src=./JS/Factory.js> </script>
+ <script src="./JS/Controller.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+</html>

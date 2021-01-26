@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"ng-app = "App">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet"href ="./CSS/main.css"> 
+    <title>Vugo | Buy Your Dream Home Here</title>
+</head>
+    <body ng-controller = "main-controller">
+        <nav-bar></nav-bar>
+             <div class = "container-fluid filter-options">
+        <div class = "row">
+            <div class = "col-md-2">
+             <h6>Min Price</h6>
+               <select name="minPrice" id="minPrice" ng-model="price.min" class="form-control">
+                   <option value="100000">$100,000</option>
+                   <option value="200000">$200,000</option>
+                   <option value="300000">$300,000</option>
+                   <option value="400000">$400,000</option>
+                   <option value="500000">$500,000</option>
+                   <option value="600000">$600,000</option>
+                   <option value="700000">$700,000</option>
+                   <option value="800000">$800,000</option>
+                   <option value="900000">$900,000</option>
+                   <option value="1000000">$1,000,000</option>
+               </select>
+            </div>
+    <div class = 'col-md-2'>
+        <h6>Max Price</h6>
+        <select name="MaxPrice" id="MaxPrice" ng-model="price.max" class="form-control">
+                    <option value="100000">$100,000</option>
+                    <option value="200000">$200,000</option>
+                    <option value="300000">$300,000</option>
+                    <option value="400000">$400,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="600000">$600,000</option>
+                    <option value="700000">$700,000</option>
+                    <option value="800000">$800,000</option>
+                    <option value="900000">$900,000</option>
+                    <option value="1000000">$1,000,000</option>
+                </select>
+
+            </div>
+           
+            <div class = "col-lg-1">
+                <h6>Sqft</h6>
+                 <select name="size" id="size" class="form-control"ng-model="squareFt">
+                     <option value="900">900+</option>
+                     <option value="2000">2,000+</option>
+                     <option value="2500">2,500+</option>
+                     <option value="3000">3,000+</option>
+                     <option value="3500">3,500+</option>
+                     <option value="4000">4,000+</option>
+                     <option value="45000">4,500+</option>
+                     <option value="5000">5,000+</option>
+                     <option value="6000">6,000+</option>
+                 </select>
+            </div>
+            <div class="col-lg-1">
+                <h6>Bedrooms</h6>
+                <select name="bedrooms" id="beds" class="form-control"ng-model="bedrooms">
+                    <option value="2">2+</option>
+                     <option value="4">4+</option>
+                     <option value = "6">6+</option>
+                     <option value = "8">8+</option>
+                    <option value="10">10+</option>
+                </select>
+            </div>
+    <div class="col-lg-1">
+        <h6>Bathrooms</h6>
+                <select name="bathrooms" id="baths" class="form-control"ng-model = "bathrooms">
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+                <option value="6">6+</option>
+                </select>
+        </div>
+            <div class = "col-lg-3">
+                <h6>Filter by Location</h6>
+    <input class="form-control mr-sm-2" type="search" placeholder="Enter Address,Neighborhood or ZIP" ng-model = "search.address">
+            </div>
+        </div>
+    </div>
+
+<div class = "container">  
+    <div class = "row">
+        <div class="col-lg-3 col-md-4 col-sm-6" style="margin:50px 0 50px 0px;"
+            ng-repeat="list in data | filter:search:strict | SearchFilter:price:squareFt:bedrooms:bathrooms">
+            <div class = 'card-box'>
+            <div class = "img-box">
+                <img ng-src = "{{list.image}}.jpg">
+            </div>
+        <div class = "content">
+             <button class="btn btn-xs btn-danger"
+              ng-show="showDetails === true"
+              ng-click="showDetails = !showDetails">
+              Close
+             </button>
+             <div class="initital-info" ng-hide="showDetails === true">
+                 <h5><strong>{{list.price | currency }}</strong></h5>
+                 <p>{{list.address}}</p>
+             </div>
+    <div class="Details" ng-show="showDetails === true">  
+        <span>Beds: {{list.details.bedrooms}}</span>
+        <span>Baths: {{list.details.bathrooms}}</span>
+        <span>Sqft: {{list.details.squareFt}}</span><br>
+        <p>Great Place to Live</p>
+            </div>
+            <button class="btn btn-xs btn-success"
+            ng-hide="showDetails === true"
+            ng-click="showDetails = !showDetails">
+            Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<pagination-bar></pagination-bar>
+<footer-nav></footer-nav>
+    <script src = "./JS/Module.js"></script>
+    <script src = "./JS/Factory.js"></script>
+    <script src="./JS/Controller.js"></script>
+    <script src="./JS/filters.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
