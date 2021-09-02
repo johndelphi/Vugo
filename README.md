@@ -43,7 +43,7 @@ Built With
  
 
 ## Contributors
- Melissa Uchem
+john michael
 
 ## Acknowledgments
 Design and Functionality inspiration
