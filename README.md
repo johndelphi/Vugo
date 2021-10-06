@@ -12,9 +12,7 @@ install git to enable git command in terminal.
 https://git-scm.com/downloads
 
 ## Running The Application on Your Local Machine
- 1.Clone the repo
- 
-  git clone  https://github.com/muchem/Real-estate-concept.git
+ 1.Clone the rep
   
   
  ![Git clone terminal image](https://opensource.com/sites/default/files/u128651/git_guide12.png)
